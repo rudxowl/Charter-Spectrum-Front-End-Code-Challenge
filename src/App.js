@@ -48,6 +48,12 @@ class App extends React.Component {
           entry.state = data[i].state;          
           entry.phone = data[i].telephone;                
           entry.genre = data[i].genre;
+
+          //split genre
+          for(let j = 0; j<data[i].genre.split(',').length;j++){
+           entry.genreSpe = data[i].genre.split(',')[j];
+          }
+          
           array[i] = entry;       
         } 
      
@@ -60,8 +66,12 @@ class App extends React.Component {
   }
 
   //update search value
-  handleSearchEvents = (title, name) => {
-      this.setState({ [name]: title });
+  handleSearchEvents = (value, name) => {
+      this.setState({ [name]: value });
+  }
+
+  handleClearButton = (name) => {
+      this.setState({ [name]: '' });
   }
   
   //update current page
@@ -95,14 +105,16 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>Restaurants</h1>
+        <h1>Restaurants </h1>
         
         <SearchBar
           search={this.state.search}
-          handleSearchEvents={this.handleSearchEvents} />
+          handleSearchEvents={this.handleSearchEvents}
+          handleClearButton={this.handleClearButton} 
+          />
           
         <div class='pagebutton'>
-        <label for="pagebutton">Page:</label> 
+        <label id='pagelabel' for="pagebutton">Page:</label> 
         <select id='pagebutton' type="text" name='page' value={this.props.page} onChange={this.updatePage}>
           {items} 
         </select>
@@ -117,9 +129,6 @@ class App extends React.Component {
           pages={this.pages}
           page={this.state.page}
           />   
-
-
-
       </div>
     )
   }
