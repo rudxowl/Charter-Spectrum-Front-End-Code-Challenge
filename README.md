@@ -3,10 +3,8 @@ Tom Min
 
 ## Restaurants Data Table Application
 
-### DATA
-Restaurant Data
-API Endpoint: https://code-challenge.spectrumtoolbox.com/api/restaurants API Key
-Header: Authorization | Api-Key q3MNxtfep8Gt
+### Page URL
+https://rudxowl.github.io/Charter-Spectrum-Front-End-Code-Challenge/
 
 ### Application Features
 1. Alphabetical sort
@@ -14,3 +12,6 @@ Header: Authorization | Api-Key q3MNxtfep8Gt
 3. Filter
 4. Pagination 
 
+### DATA
+Restaurant Data
+API Endpoint: https://code-challenge.spectrumtoolbox.com/api/restaurants
