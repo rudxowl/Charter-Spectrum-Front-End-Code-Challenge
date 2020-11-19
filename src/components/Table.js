@@ -36,7 +36,7 @@ export class Table extends Component {
     });
 
     //specify rows on the current page
-    pageRows=rows.slice(10*(this.props.page-1),10*this.props.page-1);     
+    pageRows=rows.slice(10*(this.props.page-1),10*this.props.page);     
 
     //delete redundant data for filter options
     this.states = [...new Set(this.props.data.map(x=>x.state))];
