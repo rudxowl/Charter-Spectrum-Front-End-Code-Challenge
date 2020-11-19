@@ -9,7 +9,8 @@ API Endpoint: https://code-challenge.spectrumtoolbox.com/api/restaurants API Key
 Header: Authorization | Api-Key q3MNxtfep8Gt
 
 ### Application Features
-1. Search bar
-2. Filter
-3. Pagination 
+1. Alphabetical sort
+2. Search bar
+3. Filter
+4. Pagination 
 
