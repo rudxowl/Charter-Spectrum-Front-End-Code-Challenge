@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.pagebutton{
+  float:right;
+}
+
+.Table{
+  width:100%;
+
+}
